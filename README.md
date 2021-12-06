@@ -1,5 +1,5 @@
 # SoftwareEngineering
-Repo for lab №2
+Repo for lab №3
 
 # Authors:
 
