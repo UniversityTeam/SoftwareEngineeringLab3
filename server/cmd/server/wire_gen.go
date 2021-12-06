@@ -6,7 +6,7 @@
 package main
 
 import (
-	"github.com/roman-mazur/chat-channels-example/server/balancers"
+	"github.com/UniversityTeam/SoftwareEngineeringLab3/server/balancers"
 )
 
 // Injectors from modules.go:

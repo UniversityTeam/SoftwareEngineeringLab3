@@ -3,7 +3,7 @@ package main
 import (
 	"database/sql"
 	"flag"
-	"github.com/roman-mazur/chat-channels-example/server/db"
+	"github.com/UniversityTeam/SoftwareEngineeringLab3/server/db"
 	"log"
 	"net/http"
 	"os"
@@ -14,7 +14,7 @@ var httpPortNumber = flag.Int("p", 8080, "HTTP port number")
 
 func NewDbConnection() (*sql.DB, error) {
 	conn := &db.Connection{
-		DbName:     "Balancers",
+		DbName:     "BALANCERS",
 		User:       "postgres",
 		Host:       "localhost",
 		Password:   "pass",

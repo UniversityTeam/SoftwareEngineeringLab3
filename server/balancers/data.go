@@ -7,20 +7,20 @@ import (
 )
 
 type Balancer struct {
-	Id int64  json:"id"
-	Name string json:"name"
-	TotalMachinesCount int64 json:"totalMachinesCount"
-	UsedMachines string json:"usedMachines"
+	Id                 int64  `json:"id"`
+	Name               string `json:"name"`
+	TotalMachinesCount int64  `json:"totalMachinesCount"`
+	UsedMachines       string `json:"usedMachines"`
 }
 
 type Machine struct {
-	Id int64  json:"id"
-	Name string json:"name"
-	Worked bool json:"worked"
+	Id     int64  `json:"id"`
+	Name   string `json:"name"`
+	Worked bool   `json:"worked"`
 }
 
 type CheckResult struct {
-	Exists bool  json:"exists"
+	Exists bool `json:"exists"`
 }
 
 type Store struct {

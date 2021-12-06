@@ -2,7 +2,7 @@ package balancers
 
 import (
 	"encoding/json"
-	"github.com/roman-mazur/chat-channels-example/server/tools"
+	"github.com/UniversityTeam/SoftwareEngineeringLab3/server/tools"
 	"log"
 	"net/http"
 )

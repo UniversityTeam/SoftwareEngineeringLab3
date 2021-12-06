@@ -3,6 +3,7 @@ package main
 import (
 	"context"
 	"fmt"
+	"github.com/UniversityTeam/SoftwareEngineeringLab3/server/balancers"
 	"net/http"
 )
 
@@ -10,9 +11,9 @@ type HttpPortNumber int
 
 // ChatApiServer configures necessary handlers and starts listening on a configured port.
 type BalancerApiServer struct {
-	Port HttpPortNumber
+	Port            HttpPortNumber
 	ChannelsHandler balancers.HttpHandlerFunc
-	server *http.Server
+	server          *http.Server
 }
 
 // Start will set all handlers and start listening.

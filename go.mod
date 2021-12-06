@@ -1,4 +1,4 @@
-module github.com/roman-mazur/chat-channels-example
+module github.com/UniversityTeam/SoftwareEngineeringLab3
 
 go 1.15
 

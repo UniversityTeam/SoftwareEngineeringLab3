@@ -1,10 +1,11 @@
-//+build wireinject
+//go:build wireinject
+// +build wireinject
 
 package main
 
 import (
+	"github.com/UniversityTeam/SoftwareEngineeringLab3/server/balancers"
 	"github.com/google/wire"
-	"github.com/roman-mazur/chat-channels-example/server/channels"
 )
 
 // ComposeApiServer will create an instance of CharApiServer according to providers defined in this file.

@@ -13,7 +13,7 @@ client.listOfBalancers()
         console.log(list);
     })
     .catch((e) => {
-        console.log(Problem listing available balancers: ${e.message});
+        console.log(`Problem listing available balancers: ${e.message}`);
     });
 
 setTimeout(() => {
@@ -24,7 +24,7 @@ setTimeout(() => {
             console.log('Update machine status response:', resp);
         })
         .catch((e) => {
-            console.log(Problem updating a machine: ${e.message});
+            console.log(`Problem updating a machine: ${e.message}`);
         });
 }, 2000)
 
@@ -37,6 +37,6 @@ setTimeout(() => {
             console.log(list);
         })
         .catch((e) => {
-            console.log(Problem listing available balancers: ${e.message});
+            console.log(`Problem listing available balancers: ${e.message}`);
         });
 }, 3000)
