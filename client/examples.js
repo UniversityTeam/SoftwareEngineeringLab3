@@ -1,11 +1,11 @@
 // This file contains examples of scenarios implementation using
-// the SDK for channels management.
+// the SDK for balancers management.
 
-const channels = require('./channels/client');
+const balancers = require('./balancers/client');
 
-const client = channels.Client('http://localhost:8080');
+const client = balancers.Client('http://localhost:8080');
 
-// Scenario 1: Display available channels.
+// Scenario 1: Display available balancers.
 client.listOfBalancers()
     .then((list) => {
         console.log('=== Scenario 1 ===');
@@ -16,12 +16,12 @@ client.listOfBalancers()
         console.log(`Problem listing available balancers: ${e.message}`);
     });
 
-// Scenario 2: Create new channel.
+// Scenario 2: Update a machine.
 client.updateMachine(3, true)
     .then((resp) => {
         console.log('=== Scenario 2 ===');
         console.log('Update machine status response:', resp);
     })
     .catch((e) => {
-        console.log(`Problem creating a new channel: ${e.message}`);
+        console.log(`Problem updating a machine: ${e.message}`);
     });
