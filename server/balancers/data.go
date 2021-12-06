@@ -77,6 +77,7 @@ func (s *Store) ListBalancers() ([]*Balancer, error) {
 			return nil, err
 		}
 		res[i].UsedMachines = string(correctData)
+		res[i].TotalMachinesCount = int64(len(machines))
 
 	}
 
