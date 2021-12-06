@@ -1,16 +1,9 @@
-Приклад організації коду для 2-гої лабораторної роботи.
+# SoftwareEngineering
+Repo for lab №2
 
-- Сервер запускається командою
-```shell script
-go run ./cmd/server
-```
-з директорії `server`.
+# Authors:
 
-- Приклади реалізації сценаріїв на базі клієнтського SDK запускаються через команду
-```shell script
-npm install
-node examples.js
-```
-з директорії `client`.
-
-- Папка `db` містить SQL скрипти для ініціалізації БД сервера.
+- Stepan Polishchuk
+- Yulia Oliinyk
+- Bohdan Maik
+- Guskov Danil
